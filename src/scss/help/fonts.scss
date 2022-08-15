@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Alegreya-Bold';
+    src: url('../fonts/Alegreya-Bold.eot');
+    src: local('☺'), url('../fonts/Alegreya-Bold.woff') format('woff'), url('../fonts/Alegreya-Bold.ttf') format('truetype'), url('../fonts/Alegreya-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$font-bold: 'Alegreya-Bold', serif;
+
+@font-face {
+    font-family: 'Alegreya-Regular';
+    src: url('../fonts/Alegreya-Regular.eot');
+    src: local('☺'), url('../fonts/Alegreya-Regular.woff') format('woff'), url('../fonts/Alegreya-Regular.ttf') format('truetype'), url('../fonts/Alegreya-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-regular: 'Alegreya-Regular', serif;
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../fonts/PlayfairDisplay-Bold.eot');
+    src: local('☺'), url('../fonts/PlayfairDisplay-Bold.woff') format('woff'), url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$font-maintitle: 'PlayfairDisplay-Bold', serif;
+
+@font-face {
+    font-family: 'SCRIPTIN';
+    src: url('../fonts/SCRIPTIN.eot');
+    src: local('☺'), url('../fonts/SCRIPTIN.woff') format('woff'), url('../fonts/SCRIPTIN.ttf') format('truetype'), url('../fonts/SCRIPTIN.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-scriptin: 'SCRIPTIN', serif;
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: local('☺'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-text: 'ProximaNova-Regular', sans-serif;

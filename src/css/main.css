@@ -304,7 +304,7 @@ h6 {
   background-color: rgba(86, 83, 76, 0.8);
 }
 
-/*------------------Intro-----------------*/
+/*------------------Art-----------------*/
 .art {
   margin-top: 10px;
   background: url("../img/art/art-background.png");
@@ -357,6 +357,48 @@ h6 {
   text-align: center;
   letter-spacing: 0.043rem;
 }
+.art__chef {
+  margin-top: 49px;
+}
+.art__quote {
+  position: relative;
+  max-width: 410px;
+  max-height: 95px;
+  margin: 0 auto;
+  margin-top: 45px;
+  color: #a47d5e;
+  font-family: "SCRIPTIN", serif;
+  font-size: 1.714rem;
+  line-height: 2.143rem;
+  text-align: center;
+  letter-spacing: 0.043rem;
+}
+.art__quote::before {
+  content: "“";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  opacity: 0.5;
+  color: #56534c;
+  font-family: "SCRIPTIN", serif;
+  font-size: 4.286rem;
+  text-align: left;
+  letter-spacing: 0.107rem;
+}
+.art__quote::after {
+  content: "“";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  opacity: 0.5;
+  color: #56534c;
+  font-family: "SCRIPTIN", serif;
+  font-size: 4.286rem;
+  text-align: left;
+  letter-spacing: 0.107rem;
+}
 .clip {
   position: relative;
 }
@@ -395,7 +437,54 @@ h6 {
   text-transform: uppercase;
 }
 
+.chef {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 25px;
+}
+.chef__first-name, .chef__last-name {
+  color: #56534c;
+  font-family: "Alegreya-Regular", serif;
+  font-size: 1.714rem;
+  line-height: 2.143rem;
+  text-align: center;
+  letter-spacing: 0.043rem;
+}
+.chef__first-name::before, .chef__last-name::before {
+  content: "";
+  display: block;
+  margin-bottom: 21px;
+  width: 111px;
+  height: 1px;
+  background-color: #d7d5ca;
+}
+.chef__first-name::after, .chef__last-name::after {
+  content: "";
+  display: block;
+  margin-top: 19px;
+  width: 111px;
+  height: 1px;
+  background-color: #d7d5ca;
+}
+.chef__avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .img-block {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 610px;
           flex: 0 1 610px;
@@ -414,4 +503,125 @@ h6 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 20px;
+}
+.img-block__label {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.95;
+}
+.img-block__label-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 156px;
+  color: #c9b176;
+  font-family: "Alegreya-Regular", serif;
+  font-size: 2.143rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.107rem;
+}
+.img-block__item {
+  display: block;
+  outline: 5px solid #ffffff;
+  outline-offset: -10px;
+}
+
+/*------------------Dish-----------------*/
+.dish {
+  position: relative;
+  border-top: 1px solid transparent;
+  min-height: 760px;
+  width: 100%;
+  background: url("../img/dish/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dish__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 965px;
+  height: 512px;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+.dish__img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 420px;
+          flex: 0 1 420px;
+  overflow: hidden;
+}
+.dish__photo {
+  display: block;
+}
+.dish__triangle {
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+}
+.dish__stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dish__description {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 545px;
+          flex: 0 1 545px;
+  padding: 80px 85px 41px 63px;
+  height: 100%;
+  background-color: #fff;
+  background-image: url("../img/dish/descr-background.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+}
+.dish__block-header-title {
+  font-family: "Alegreya-Bold", serif;
+  font-size: 3.428rem;
+  text-align: left;
+  color: #56534c;
+  letter-spacing: 0.0857rem;
+}
+.dish__block-header-subtitile {
+  font-family: "Alegreya-Bold", serif;
+  font-size: 1rem;
+  line-height: 2.143;
+  text-align: left;
+  color: #a47d5e;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.dish__txt {
+  margin-top: 70px;
+  color: #56534c;
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.714;
+  text-align: left;
+  letter-spacing: 0.1rem;
+}
+.dish__label {
+  position: absolute;
 }
